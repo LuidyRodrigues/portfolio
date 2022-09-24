@@ -1,0 +1,480 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: Heebo;
+background-color: #000000;
+
+}
+
+.default {
+    display: inline-block;
+    text-decoration: none;
+    color: #23c2ad;
+    padding: 3px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+   display: flex;
+    justify-content: center;
+}
+
+.default::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(110deg, #f8f8f8, #000000, #23c2ad, #23c2ad, #23c2ad );
+    background-size: 50% 100%;
+    border-radius: inherit;
+    
+    
+}
+
+.default:hover::before {
+ animation:borderAnimate 0.85s linear infinite;
+}
+
+
+@keyframes borderAnimate {
+to{ 
+    transform: translateX(-50%);
+}
+}
+
+.default span {
+    display: block;
+    background-color: #000000;
+    padding: 13px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    max-width: 1152px;
+    margin: 27px auto 0;
+    
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-decoration: none;
+    color: #23c2ad;
+    margin-right: 23px;
+}
+
+#about-me-section {
+    margin: 175px auto 0;
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    color: #23c2ad;
+
+}
+
+
+
+
+#about-me-section div p {
+font-size: 16px;
+line-height: 23px;
+width: 497px;
+color: #23c2ad;
+
+}
+
+#about-me-section div button {
+padding: 18px;
+border: none;
+cursor: pointer;
+box-sizing: border-box;   
+overflow: hidden;
+background: #23c2ad;
+border-radius: 5px;
+min-width: 200px;
+color: rgb(8, 0, 0);
+z-index: 0;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: all 0.3s;
+font-weight: 600;
+}
+button::before{
+    content: '';
+position: absolute;
+display: block;
+top: 0;
+left: -50px;
+width: 70%;
+height: 100%;
+background: linear-gradient(90deg, transparent, #000e0c, transparent);
+transition: all 1s;
+z-index: -1;
+transform: translateX(-120px) skew(-20deg);
+
+}
+
+button:hover::before {
+    transform: translateX(300px) skew(-20deg);
+}
+
+button:hover {
+    background: #00f7ff;
+}
+
+
+
+#about-me-section div img {
+
+width: 243px;
+height: 243px;
+border-radius: 50%;
+
+}
+
+#my-projects-section {
+    background-color: #23c2ad;
+    padding: 24px 0;
+    margin: 70px 0;
+
+
+
+}
+
+#my-projects-section h2 {
+
+    font-size: 28px;
+    color: #000000;
+   
+
+}
+
+#my-projects-section section {
+    width: 860px;
+    margin: 0 auto;
+
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 21px;
+
+
+}
+
+.projects-container div {
+    background-color: #000000;
+    width: 49%;
+    margin: 0 0 20px 0;
+    padding-bottom: 16px;
+    border-radius: 8px;
+}
+
+.projects-container div a {
+    text-decoration: none;
+    color: #23c2ad;
+}
+
+.projects-container div div {
+
+width: 100%;
+height: 170px;
+border-radius: 8px;
+background-image: url("https://mejoreslaptops.com/wp-content/uploads/2020/06/Las-mejores-laptops-para-trabajar-desde-casa.jpg");
+background-size: cover;
+}
+
+.projects-container div h3 {
+
+    font-size: 26px;
+    font-weight: bold;
+    margin: 14px 0 9px 23px;
+
+}
+
+.projects-container div p {
+
+    font-size: 16px;
+    margin-left: 23px;
+
+
+}
+
+#experiences-container {
+     width: 1080px;
+     margin: 55px auto;
+
+}
+
+#experiences-container section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#experiences-container h2 {
+
+    margin: 0 0 12px 110px;
+    font-size: 28px;
+
+}
+
+.experience-item {
+width: 480px;
+padding: 20px 20px 27px 20px;
+background-color: #23c2ad;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 37px;
+border-radius: 48px;
+color: rgb(2, 0, 0);
+
+
+
+}
+
+.experience-item img {
+width: 88px;
+height: 88px;
+border-radius: 50%;
+background-color: rgb(0, 0, 0);
+
+
+}
+
+.experience-item h3 {
+
+    font-size: 36px;
+    margin: auto 0 0 13px;
+}
+
+.experience-item p {
+margin-top: 12px;
+font: 16px;
+
+}
+
+.experience-item span {
+    margin: 26px 0;
+    width: 100%;
+    font-size: 22px;
+}
+
+.experience-item ul {
+
+width: 100%;
+margin-left: 20px;
+
+}
+
+.experience-item ul  li {
+
+font-size: 18px;
+margin-bottom: 10px;
+
+}
+
+#skills-container {
+width: 100%;
+
+}
+
+#skills-container h2 {
+font-size: 28px;
+margin-bottom: 6px;
+text-align: center;
+}
+
+#skills-container div {
+width: 100%;
+background: #23c2ad;
+padding: 12px 0;
+display: flex;
+justify-content: center;
+
+}
+
+#skills-container div img {
+height: 75px;
+
+}
+
+#skills-container div img + img {
+margin-left: 23px;
+
+
+}
+
+footer {
+    width: 856px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #23c2ad  ;
+    padding-top: 31px;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 45px;
+
+}
+
+footer img + img {
+margin-left: 35px;
+
+}  
+
+@media (max-width: 400px) {
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+#about-me-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 34px;
+    width: 100%;
+ }
+
+#about-me-section div h1 {
+font-size: 32px;
+line-height: 40px;
+margin-bottom: 44px;
+text-align: center;
+}
+
+#about-me-section div p {
+font-size: 16px;
+width: 328px;
+text-align: center;
+}
+
+#about-me-section div img {
+width: 177px;
+height: 177px;
+margin-bottom: 36px;
+
+}
+
+#about-me-section div button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#my-projects-section{
+    display: flex;
+}
+
+#my-projects-section section h2 {
+     font-size: 22px;
+     text-align: center;
+}  
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-container div {
+    width: 354px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.projects-container div h3 {
+    font-size: 22px;
+}
+
+.projects-container div p {
+    font-size: 16px;
+    max-width: 314px;
+}
+
+#sills-container h2  {
+    font-size: 24px;
+
+}
+
+#sills-container div {
+    flex-wrap: wrap;
+    padding: 4px 0 34px;
+}
+
+#sills-container img, #skills-container div img + img {
+  margin: 40px 30px 0px;
+}
+
+#experiences-container {
+    width: 100%;
+}
+
+
+#experiences-container section {
+flex-wrap: wrap;
+}
+
+.experience-item {
+width: 355px;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+}
+
+.experience-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+}
+
+.experience-item p {
+    font-size: 12px;
+}
+
+.experience-item span {
+    font-size: 18px;
+}
+
+.experience-item ul li  {
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+}
+
+
+
+
+}
+
+
